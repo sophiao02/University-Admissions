@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>University Adimissions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo1x.png" alt="logo">
+		<h1>Somewhere University</h1>
+        <div id="hamburger"><a href="#closex">&#9776;</a></div>
+        <div id="phone"><a href="tel:19005551234">1-800-555-1234</a></div>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <div id="closex"><a href="#hamburger">x</a></div>
+        <ul>
+        <li><a href="#">Home</a>
+        <li><a href="#">About</a></li>
+        <li class="active"><a href="#">Apply</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Tuition</a></li>
+        
+    </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        
+        
+        <h1>Apply</h1>
+        
+        <form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+            <h3>Contact Information</h3>
+            <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+            <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+            <label>Email: <input type="email" name="email" autocomplete="email" required title="Your Email Here"></label>
+            <label>Cell Phone: <input type="tel" name="phone" autocomplete="tel" required title="Cell Phone Here"></label>
+            <label>Address: <input type="text" name="address" autocomplete="address-level1" title="Address Here"></label>
+            <label>City: <input type="text" name="city" autocomplete="address-level2" title="City Here"></label>
+            <label>State: <input type="text" name="state" autocomplete="address-level1" title="State Here"></label>
+            <label>Zip Code: <input type="text" name="zip" autocomplete="postal-code" title="Zip Code Here"></label>
+
+            <h3>Application Type</h3>
+            <label>
+                <select name="condition">
+                    <option>Please Select</option>
+                    <option value="freshman">Freshman</option>
+                    <option value="transfer">Transfer</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+
+            <h3>Completed Education</h3>
+            <label><input type="checkbox" name="GED Completed">GED</label>
+            <label><input type="checkbox" name="HS Completed">High School Diploma</label>
+            <label><input type="checkbox" name="Associates Completed">Two Year Associates Degree</label>
+            <label><input type="checkbox" name="Other Completed">Other</label>
+
+            <h3>Communication Preferences</h3>
+            <label><input type="radio" name="updates" value="textu">Text Message Updates</label>
+            <label><input type="radio" name="updates" value="emailu">Email Updates</label>
+            <label><input type="radio" name="updates" value="mailu">Mail Updates</label>
+            <label><input type="radio" name="updates" value="allu">All Updates</label>
+            
+
+            <h3>Account Information</h3>
+            <label>Username (6 or more)<input type="text" required minlength="6" title="Please enter a Username that is at least 6 char long"></label>
+
+            <label>Password (5-9 letters or numbers)<input type="password" name="password" required pattern="[A-Za-z0-9]{5,9}" title="5-9 letters or numbers PLEASE"></label>
+
+           <input type="submit" value="Create Account">
+        </form>
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; <span id="year">x</span> &bull; Sophia Otis</p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   <script src="js/scripts.js"></script>
+</body>
+</html> 
